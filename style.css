@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+body {
+    margin: 0;
+    font-family: 'Inter' , sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #2e2e2e;
+}
+
+.logo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 16px;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    background-color: #d9fd51;
+    color: #000;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
+    background-color: #0f0f0f;
+    color: white;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-family: 'Bebas Neue' , sans-serif;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 16px;
+    font-family: 'Inter' , sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn-contact {
+    background-color: #d2ff4f;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-contact:hover {
+    background-color: #c1ea40;
+}
+
+.btn-icon {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-icon:hover {
+    background-color: #333;
+}
+
+.hero-image img {
+    max-width: 100%;
+    width: 320px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 80px 40px;
+    background-color: #0f0f0f;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.about-heading h2 {
+    font-size: 60px;
+    font-family: 'Bebas Neue' , sans-serif;
+    color: white;
+    line-height: 1;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.about-image img {
+    width: 280px;
+    border-radius: 15px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Inter' , sans-serif;
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-heading h2 {
+        font-size: 40px;
+    }
+
+    .about-content {
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 200px;
+    }
+}
+
+
+.projects {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+.projects h2 {
+    font-size: 32px;
+    font-family: 'Bebas Neue' sans-serif;
+    margin-bottom: 40px;
+    text-align: left; 
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+.project-card:hover {
+    transform: translateY(-5px)
+}
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.project-card a {
+    background-color: #d2ff4f;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.project-card a:hover {
+    background-color: #c1ea40;
+}
+
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    background-color: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 32px;
+    font-family: 'Bebas Neue' , sans-serif;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact input, 
+.contact textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: #ccc;
+}
+
+.contact button {
+    background-color: #d2ff4f;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #c1ea40;
+}
+
+.btn-contact,
+.btn-icon,
+.project-card a,
+nav a {
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #1a1a1a;
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: #d2ff4f;
+}

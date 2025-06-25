@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">IFIDON FAITH</div>
+        <nav>
+            <a href="http://#work">Work</a>
+            <a href="http://#about">About</a>
+            <a href="http://#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hi, I am <br /> Faith.</h1>
+            <p>A Nigerian based developer passionate about building accessible and user friendly websites.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-contact">Contact me</a>
+                <a href="https://www.linkedin.com/in/abimbola-ifidon/" target="_blank" class="btn-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <a href="http://www.github.com" target="_blank" class="btn-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="./faith.jpeg" alt="photo of Faith" >
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="./faith.jpeg" alt="Faith image">
+            </div>
+            <div class="about-text">
+                <p>I'm a front-end developer with a passion for creating beautiful, accessible and user-friendly websites. I enjoy turning ideas into digital experiences using clean code and thoughtful design. Whether it's building responsive layouts or optimizing performance, I'm always excited to learn and grow in the tech space. When i am not coding, you will find me exploring design trends or cheering on fellow women in tech!</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="projects" id="projects" >
+        <h2>Featured Projects</h2>
+        <div class="project-grid">
+
+             <!--Project 1-->
+            <div class="project-card">
+                <img src="./Error-404.png" alt="Error 404 Page Screenshot">
+                <h3>Error 404 Page</h3>
+                <p>A custom-designed error page with clean layout and personality for broken links.</p>
+                <a href="https://dainty-manatee-468b2b.netlify.app/" target="_blank"> View Project</a>
+             </div>
+
+             <!--Project 2-->
+             <div class="project-card">
+                <img src="./Landing-pg.png" alt="Landing page screenshot">
+                <h3>Landing Page</h3>
+                <p>A simple, static landing page with a clear call to action and sleek layout.</p>
+                <a href="https://landing-paige.netlify.app/" target="_blank">View Project</a>
+            </div>
+
+            <!--Project 3-->
+            <div class="project-card">
+                <img src="./Profile-card.png" alt="Profile card screenshot">
+                <h3>Profile card</h3>
+                <p>A responsive profile card showcasing name, bio, and links in a compact UI.</p>
+                <a href="https://phaiyt-mid-cohort-ass.netlify.app/" target="_blank">View Project</a>
+            </div>
+
+
+            <!--Project 4-->
+            <div class="project-card">
+                <img src="" alt="Tribute Page Screenshot">
+                <h3>Tribute Page</h3>
+                <p>A clean tribute page with a bold heading, paragraph, and structured layout.</p>
+                <a href="#" target="_blank">View Project</a>
+             </div>
+        </div>
+     </section>
+
+     <section class="contact" id="contact">
+        <h2>Contact me</h2>
+        <form name="contact" method="post" data-netlify="true">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 IFIDON FAITH. All rights reserved</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
