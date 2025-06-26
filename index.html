@@ -12,9 +12,9 @@
     <header class="navbar">
         <div class="logo">IFIDON FAITH</div>
         <nav>
-            <a href="http://#projects" id="work">Work</a>
-            <a href="http://#about">About</a>
-            <a href="http://#contact">Contact</a>
+            <a href="#projects" id="work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <section class="hero">
@@ -92,10 +92,14 @@
 
      <section class="contact" id="contact">
         <h2>Contact me</h2>
-        <form name="contact" method="post" data-netlify="true">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <form name="contact" method="post" data-netlify="true" netlify>
+            <!--Hidden input for Netlify form handling-->
+            <input type="hidden" name="form-name" value="contact" >
+
+            <!--Visible input fields for user-->
+            <input type="text" name="name" placeholder="Your name">
+            <input type="email" name="email" placeholder="Your Email" >
+            <textarea name="message" placeholder="Your Message" rows="6" ></textarea>
             <button type="submit">Send Message</button>
         </form>
     </section>
