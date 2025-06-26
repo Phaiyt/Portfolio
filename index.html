@@ -92,9 +92,11 @@
 
      <section class="contact" id="contact">
         <h2>Contact me</h2>
-        <form name="contact" method="post" data-netlify="true" netlify>
-            <!--Hidden input for Netlify form handling-->
-            <input type="hidden" name="form-name" value="contact" >
+        <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" action="/success">
+            <input type="hidden" name="form-name" value="contact" />
+            <p>
+                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </p>
 
             <!--Visible input fields for user-->
             <input type="text" name="name" placeholder="Your name">
