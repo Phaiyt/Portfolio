@@ -11,12 +11,17 @@
 <body>
     <header class="navbar">
         <div class="logo">IFIDON FAITH</div>
-        <nav>
+
+        <button class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="nav-links">
             <a href="#projects" id="work">Work</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
         </nav>
-    </header>
+    </header>  
     <section class="hero">
         <div class="hero-text">
             <h1>Hi, I am <br /> Faith.</h1>
@@ -45,7 +50,8 @@
                 <img src="./faith.jpeg" alt="Faith image">
             </div>
             <div class="about-text">
-                <p>I'm a front-end developer with a passion for creating beautiful, accessible and user-friendly websites. I enjoy turning ideas into digital experiences using clean code and thoughtful design. Whether it's building responsive layouts or optimizing performance, I'm always excited to learn and grow in the tech space. When i am not coding, you will find me exploring design trends or cheering on fellow women in tech!</p>
+                <p>I am a Front-End Developer with a strong passion for creating accessible, responsive, and user-centric websites. My journey into tech began with self-directed learning in UI/UX design, which provided a foundation in design thinking and user experience. Although I paused briefly, in 2025 I was awarded a scholarship by HerTechTrail, which reignited my commitment and provided structured learning and a supportive community.
+Through this experience, I’ve developed a solid understanding of HTML, CSS, and responsive design principles. I enjoy translating ideas into seamless digital experiences and continuously strive to improve my skills. I am especially passionate about inclusive design and contributing to tech spaces that uplift and empower underrepresented voices.</p>
             </div>
         </div>
 
@@ -92,11 +98,15 @@
 
      <section class="contact" id="contact">
         <h2>Contact me</h2>
-        <form name="contact" method="post" data-netlify="true" netlify-honeypot="bot-field" action="/success">
+
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="success.html">
             <input type="hidden" name="form-name" value="contact" />
-            <p>
-                <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            <p style="display:none;">
+                <label>Don't fill this out: <input name="bot-field" /></label>
+
             </p>
+
+
 
             <!--Visible input fields for user-->
             <input type="text" name="name" placeholder="Your name">
@@ -115,6 +125,14 @@
             </div>
         </div>
     </footer>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click',() => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>

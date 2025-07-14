@@ -171,7 +171,7 @@ nav a:hover {
     }
 
     .about-text {
-        padding: 0 10px;
+        padding-top: 20px;
     }
 
     .about-heading h2 {
@@ -179,7 +179,9 @@ nav a:hover {
     }
 
     .about-content {
+        flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .about-image img {
@@ -344,4 +346,89 @@ nav a {
 
 .footer .social-icons a:hover {
     color: #d2ff4f;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        right: 40px;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 10;
+    }
+    
+    .nav-links.active {
+    display: flex;
+}
+
+.menu-toggle {
+    display: block;
+}
+.navbar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 1000;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .navbar {
+        position: relative;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+    }
+    
 }
